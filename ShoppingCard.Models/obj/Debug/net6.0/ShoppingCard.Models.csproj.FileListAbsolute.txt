@@ -1,0 +1,12 @@
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\bin\Debug\net6.0\ShoppingCard.Models.deps.json
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\bin\Debug\net6.0\ShoppingCard.Models.dll
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\bin\Debug\net6.0\ref\ShoppingCard.Models.dll
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\bin\Debug\net6.0\ShoppingCard.Models.pdb
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\obj\Debug\net6.0\ShoppingCard.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\obj\Debug\net6.0\ShoppingCard.Models.AssemblyInfoInputs.cache
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\obj\Debug\net6.0\ShoppingCard.Models.AssemblyInfo.cs
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\obj\Debug\net6.0\ShoppingCard.Models.csproj.CoreCompileInputs.cache
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\obj\Debug\net6.0\ShoppingCard.Models.dll
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\obj\Debug\net6.0\ref\ShoppingCard.Models.dll
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\obj\Debug\net6.0\ShoppingCard.Models.pdb
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\obj\Debug\net6.0\ShoppingCard.Models.csproj.AssemblyReference.cache
