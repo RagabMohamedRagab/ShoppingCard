@@ -1,4 +1,4 @@
-namespace ShoppingCard.Models {
+namespace ShoppingCard.Models.Entities {
     public class ErrorViewModel {
         public string? RequestId { get; set; }
 

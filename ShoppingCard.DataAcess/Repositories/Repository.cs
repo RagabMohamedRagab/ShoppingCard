@@ -53,7 +53,7 @@ namespace ShoppingCard.DataAcess.Repositories {
 
         }
 
-        public IEnumerable<T> GetAll(Expression<Func<T, bool>> predicate, string Includes = null)
+        public IEnumerable<T> GetAll(Expression<Func<T, bool>>? predicate=null, string Includes = null)
         {
             IQueryable<T> query = db;
             if (predicate != null)

@@ -1,31 +1,31 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using ShoppingCard.Web.Models;
-using System.Diagnostics;
+﻿//using Microsoft.AspNetCore.Mvc;
 
-namespace ShoppingCard.Web.Areas.Custome.Controllers {
-    [Area("Customer")]
-    public class HomeController : Controller {
-        private readonly ILogger<HomeController> _logger;
+//using System.Diagnostics;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+//namespace ShoppingCard.Web.Areas.Custome.Controllers {
+//    [Area("Customer")]
+//    public class HomeController : Controller {
+//        private readonly ILogger<HomeController> _logger;
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+//        public HomeController(ILogger<HomeController> logger)
+//        {
+//            _logger = logger;
+//        }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
+//        public IActionResult Index()
+//        {
+//            return View();
+//        }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-    }
-}
+//        public IActionResult Privacy()
+//        {
+//            return View();
+//        }
+
+//        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+//        public IActionResult Error()
+//        {
+//            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+//        }
+//    }
+//}
