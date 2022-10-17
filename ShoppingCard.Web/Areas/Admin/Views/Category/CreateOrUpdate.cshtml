@@ -1,0 +1,37 @@
+﻿@model  CategoryVM;
+@{
+    ViewData["Title"] = (@Model.category.Id == 0 || @Model.category == null) ? "Create" : "Update" + "Category";
+
+}
+<br/>
+<section>
+    <div> 
+         <h2 class="text-primary">@((Model.category == null ||Model.category.Id == 0  ) ? "Create" : "Update") Category </h2>
+       </div>
+       <hr/>
+</section>
+<form method="post" asp-area="Admin" asp-controller="Category" asp-action="CreateOrUpdate" asp-antiforgery="true">
+    <div asp-validation-summary="ModelOnly" class="text-primary"></div>
+    <div class="form-group">
+           <input asp-for="@Model.category.Id" class="form-control" hidden>
+    </div>
+    <div class="form-group">
+    <label asp-for="@Model.category.Name" class="form-label" style="font-size:1.5rem" ></label>
+    <input   asp-for="@Model.category.Name" class="form-control">
+    <span asp-validation-for="@Model.category.Name" class="text-primary mt-2"></span>
+</div>
+ <div class="form-group">
+    <label asp-for="@Model.category.Order" class="form-label" style="font-size:1.5rem" ></label>
+    <input   asp-for="@Model.category.Order" class="form-control">
+    <span asp-validation-for="@Model.category.Order" class="text-primary mt-2"></span>
+</div>
+<div class="form-group mt-2">
+    <fieldset>
+        <input type="submit" value=@((Model.category == null || Model.category.Id == 0  ) ? "Create" : "Update") class="btn btn-primary" />
+      @Html.ActionLink("Back","Index",new {},new {@class="btn btn-danger"})
+    </fieldset>
+</div>
+</form>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"/>
+}

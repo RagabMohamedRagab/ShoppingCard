@@ -5,23 +5,28 @@
 }
 <div class="mt-3" style="display:flex;justify-content:space-between">
     <h4>List Categories</h4>
-    <a asp-action="" asp-Controller="Category" class="btn btn-primary" class="mt-3">Create</a>
+    <a asp-action="CreateOrUpdate" asp-Controller="Category" class="btn btn-primary" class="mt-3">Create</a>
 </div>
 <hr/>
 
-<table class="table table-hover">
+<table class="table table-hover" style="cursor:pointer">
   <thead>
     <tr>
         <th>Name</th>
         <th>Order</th>
+        <th>Actions</th>
     </tr>
   </thead>  
   <tbody>
-            @foreach (var category in Model.categories)
+            @foreach (var category in Model.categories.OrderBy(b=>b.Order))
             {
                  <tr class="table-active">
                 <td>@category.Name</td>
-                <td>@i++</td>
+                <td>@category.Order</td>
+                <td>
+                    @Html.ActionLink("Update","CreateOrUpdate",new {Id=category.Id},new { @class = "btn btn-primary" })
+                    @Html.ActionLink("Delete","Delete",new {Id=category.Id},new { @class = "btn btn-danger" })
+                </td>
             </tr>
         }
     </tbody>
