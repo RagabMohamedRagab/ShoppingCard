@@ -14,7 +14,7 @@ namespace ShoppingCard.Models.Entities {
         public string Description { get; set; }
        [Column(TypeName ="decimal(18,0)")]
         public double Price { get; set; }
-        public string ImgUrl { get; set; }
+        public string?  ImgUrl { get; set; }
         [ForeignKey(nameof(Category))]
         public int? CategoryId { get; set; }
         public virtual Category Category { get; set; }
