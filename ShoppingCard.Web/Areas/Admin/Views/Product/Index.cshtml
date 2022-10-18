@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "List - Products";
+}
+<section class="d-flex justify-content-between mt-3">
+    <div ><h2 class="text-primary">List - Products</h2> </div>
+    <div ><a asp-area="Admin" asp-controller="Product" asp-action="" class="btn btn-primary" >Create Product</a></div>
+</section>
+<hr />
+<table id="myTable" class="table table-bordered table-striped table-responsive" style="width:100%">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Action</th>
+    </tr>
+   </thead>
+</table>
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"/>
+}
