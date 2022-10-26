@@ -31,8 +31,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/pc/Desktop/Shopping Card/ShoppingCard.Web/Areas/Admin/Views/Product/CreateUpadte.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxDcmVhdGVVcGFkdGUuY3NodG1s
+[C:/Users/pc/Desktop/Shopping Card/ShoppingCard.Web/Areas/Admin/Views/Product/CreateUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxDcmVhdGVVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/pc/Desktop/Shopping Card/ShoppingCard.Web/Areas/Admin/Views/Product/Index.cshtml]
