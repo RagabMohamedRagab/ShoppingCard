@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "V9tHiCo4DBY54V6eXjhku8xosow+i0onWpUr4MqTUfo=",
+  "Hash": "dCIQilfTGrbRA8XLJ5mi3K5zIqNz3TqmBzyBuS2Sy2w=",
   "Source": "ShoppingCard.Web",
   "BasePath": "_content/ShoppingCard.Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\Images\\Image-Not-Found .png",
+      "SourceId": "ShoppingCard.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\",
+      "BasePath": "_content/ShoppingCard.Web",
+      "RelativePath": "Images/Image-Not-Found .png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Image-Not-Found .png"
     },
     {
       "Identity": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\js\\Product.js",
