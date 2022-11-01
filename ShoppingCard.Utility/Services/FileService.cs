@@ -15,23 +15,37 @@ namespace ShoppingCard.Utility.Services {
             _hosting = hosting;
         }
 
-        public string CreateImg(IFormFile? path)
+        public string CreateImg(string? path)
         {
-            if (path == null)
+            if (path != null)
             {
                 string FolderMain = Path.Combine(_hosting.WebRootPath, "Images");
-                string FileName = path.FileName;
-                string FullPath=Path.Combine(FolderMain, FileName);
-                if (!File.Exists(FullPath))
+                string FullPath=Path.Combine(FolderMain, path);
+                if (!Directory.Exists(FullPath))
                 {
-                    File.Create(FullPath);
+                    Directory.CreateDirectory(FolderMain);
                 }
                 FileStream stream=new FileStream(FullPath, FileMode.Create);
                 stream.CopyTo(stream);
                 stream.Close();
-                return FileName;
+                return path;
             }
-            return "Images/Image-Not-Found .png";
+            return null;
+        }
+
+        public bool DeleImg(string? path)
+        {
+            if (path != null)
+            {
+                string FolderMain = Path.Combine(_hosting.WebRootPath, "Images");
+                string FullPath = Path.Combine(FolderMain, path);
+                if (System.IO.File.Exists(FullPath))
+                {
+                    System.IO.File.Delete(FullPath);
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }

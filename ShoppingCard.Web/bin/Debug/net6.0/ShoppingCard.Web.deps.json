@@ -13,6 +13,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.9",
           "ShoppingCard.DataAcess": "1.0.0",
+          "ShoppingCard.Utility": "1.0.0",
           "Swashbuckle.AspNetCore": "6.3.0"
         },
         "runtime": {
@@ -2495,6 +2496,14 @@
         "runtime": {
           "ShoppingCard.Models.dll": {}
         }
+      },
+      "ShoppingCard.Utility/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0"
+        },
+        "runtime": {
+          "ShoppingCard.Utility.dll": {}
+        }
       }
     }
   },
@@ -3938,6 +3947,11 @@
       "sha512": ""
     },
     "ShoppingCard.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ShoppingCard.Utility/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

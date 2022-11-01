@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShoppingCard.Utility.Services {
     public interface IFileService {
-        string CreateImg(IFormFile? path);
+        string CreateImg(string? path);
+        bool DeleImg(string? path);
     }
 }

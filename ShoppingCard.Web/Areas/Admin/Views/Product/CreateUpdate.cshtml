@@ -10,11 +10,11 @@
     <hr />
 </section>
 
-<form>
+<form method="post" asp-area="Admin" asp-controller="Product" asp-action="CreateUpdate" asp-route-Id="@Model.product.Id" asp-antiforgery="true">
     <div asp-validation-summary="ModelOnly"></div>
-    <div class="form-group mt-2">
+    <div class="form-group mt-2"style="display:none">
         <label asp-for="product.Id" class="form-lable form-style"></label>
-        <input disabled asp-for="product.Id" class="form-control" />
+        <input  asp-for="product.Id" class="form-control" />
         <span asp-validation-for="product.Id" class="text-danger"></span>
     </div>
     <div class="form-group mt-2">

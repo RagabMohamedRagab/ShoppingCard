@@ -2,14 +2,17 @@
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ShoppingCard.DataAcess.IRepositories;
 using ShoppingCard.DataAcess.ViewModels;
+using ShoppingCard.Utility.Services;
 
 namespace ShoppingCard.Web.Areas.Admin.Controllers {
     [Area("Admin")]
     public class ProductController : Controller {
         private readonly IUnitOfWork _unit;
-        public ProductController(IUnitOfWork unit)
+        private readonly IFileService _fileService;
+        public ProductController(IUnitOfWork unit, IFileService fileService)
         {
             _unit = unit;
+            _fileService = fileService;
         }
         [HttpGet]
         public JsonResult AllProducts() {
@@ -41,6 +44,51 @@ namespace ShoppingCard.Web.Areas.Admin.Controllers {
             }
            productVm.product=product;
             return View(productVm);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult CreateUpdate(ProductVM model,int? Id)
+        {
+            if (Id == 0 || Id == null) 
+            {
+                    string img = _fileService.CreateImg(model.product.ImgUrl);
+                    model.product.ImgUrl = img;
+                    _unit.Producds.Add(model.product);
+                    if (_unit.Save() > 0)
+                    {
+                        return RedirectToAction(nameof(Index));
+                    }
+                
+            }
+            else
+            {
+                
+    
+                    _unit.Producds.Update(model.product);
+                    if (_unit.Save()>0)
+                    {
+                        return RedirectToAction(nameof(Index));
+                    }
+                
+            }
+            return View(model);
+
+        }
+        [HttpGet]
+        public IActionResult Delete(int? Id)
+        {
+            if (Id == 0 || Id == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                var pro = _unit.Producds.GetAll(Includes: "Category").SingleOrDefault(b => b.Id == Id);
+                _fileService.DeleImg(pro.ImgUrl);
+                _unit.Producds.Delete(pro);
+                _unit.Save();
+                return RedirectToAction(nameof(Index));
+            }
         }
     }
 }

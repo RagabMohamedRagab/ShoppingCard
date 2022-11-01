@@ -27,6 +27,7 @@ namespace ShoppingCard.DataAcess.Repositories {
                 {
                     Pro.ImgUrl=product.ImgUrl;
                 }
+                Pro.CategoryId=product.CategoryId;
                 Pro.UpdateOn=DateTime.Now;
             }
         }

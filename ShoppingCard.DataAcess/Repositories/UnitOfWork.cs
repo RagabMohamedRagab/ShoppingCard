@@ -22,10 +22,10 @@ namespace ShoppingCard.DataAcess.Repositories {
             throw new NotImplementedException();
         }
 
-        public void Save()
+        public int Save()
         {
 
-            _context.SaveChanges();
+          return  _context.SaveChanges();
         }
     }
 }
