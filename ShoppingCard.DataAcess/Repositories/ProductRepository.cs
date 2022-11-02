@@ -25,7 +25,7 @@ namespace ShoppingCard.DataAcess.Repositories {
                 Pro.Price = product.Price;
                 if (product.ImgUrl != null)
                 {
-                    Pro.ImgUrl=product.ImgUrl;
+                    Pro.ImgUrl = $"\\Images\\{product.ImgUrl}";
                 }
                 Pro.CategoryId=product.CategoryId;
                 Pro.UpdateOn=DateTime.Now;

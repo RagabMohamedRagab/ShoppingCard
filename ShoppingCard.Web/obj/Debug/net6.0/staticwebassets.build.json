@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3SpOZb0Gu6kuhhRQa1GVglX9oMaV3AhT54PUVQhPCvA=",
+  "Hash": "HLftunHepMRPvmE2eFv4tO6VmXQWsQMvQ4e5mxfLzpU=",
   "Source": "ShoppingCard.Web",
   "BasePath": "_content/ShoppingCard.Web",
   "Mode": "Default",
@@ -85,6 +85,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\Images\\Egypt.PNG",
+      "SourceId": "ShoppingCard.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\",
+      "BasePath": "_content/ShoppingCard.Web",
+      "RelativePath": "Images/Egypt.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Egypt.PNG"
+    },
+    {
       "Identity": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\Images\\Image-Not-Found .png",
       "SourceId": "ShoppingCard.Web",
       "SourceType": "Discovered",
@@ -100,23 +117,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Image-Not-Found .png"
-    },
-    {
-      "Identity": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\Images\\Man3 Picture.PNG",
-      "SourceId": "ShoppingCard.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\",
-      "BasePath": "_content/ShoppingCard.Web",
-      "RelativePath": "Images/Man3 Picture.PNG",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Man3 Picture.PNG"
     },
     {
       "Identity": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\js\\Product.js",

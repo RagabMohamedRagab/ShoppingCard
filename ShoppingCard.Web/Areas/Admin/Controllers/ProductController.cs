@@ -56,6 +56,7 @@ namespace ShoppingCard.Web.Areas.Admin.Controllers {
                     _unit.Producds.Add(model.product);
                     if (_unit.Save() > 0)
                     {
+                    
                         return RedirectToAction(nameof(Index));
                     }
                 
@@ -67,7 +68,8 @@ namespace ShoppingCard.Web.Areas.Admin.Controllers {
                     _unit.Producds.Update(model.product);
                     if (_unit.Save()>0)
                     {
-                        return RedirectToAction(nameof(Index));
+          
+                    return RedirectToAction(nameof(Index));
                     }
                 
             }
