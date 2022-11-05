@@ -13,11 +13,10 @@
                 render: function (data, type) {
                     debugger;
                     return (type == "display") ?
-                        "<a class='btn btn-primary' style='margin-left:7rem' href='/Admin/Product/CreateUpdate/" + data + "'>" + "Update" + "</a>" + "<a   class='btn btn-danger' href='/Admin/Product/Delete/" + data + "'>" + "Delete" + "</a>" : "_";
+                        "<a class='btn btn-primary' style='margin-left:7rem' href='/Admin/Product/CreateUpdate/" + data + "'>" + "<img src='../../assest/pencil-square.svg' />" + "</a>" + "<a   class='btn btn-danger' href='/Admin/Product/Delete/" + data + "'>" + "<img src='../../assest/trash.svg'/>" + "</a>" : "_";
                     }
 
             }
         ]
     });
 });
-

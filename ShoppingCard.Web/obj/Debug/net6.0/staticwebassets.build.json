@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HLftunHepMRPvmE2eFv4tO6VmXQWsQMvQ4e5mxfLzpU=",
+  "Hash": "wPBi5SL563pgiPu9lMShFPlTkX8AQwDK8GMMZLNBW+g=",
   "Source": "ShoppingCard.Web",
   "BasePath": "_content/ShoppingCard.Web",
   "Mode": "Default",
@@ -17,6 +17,40 @@
   ],
   "Assets": [
     {
+      "Identity": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\assest\\journal-text.svg",
+      "SourceId": "ShoppingCard.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\",
+      "BasePath": "_content/ShoppingCard.Web",
+      "RelativePath": "assest/journal-text.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assest\\journal-text.svg"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\assest\\pencil-square.svg",
+      "SourceId": "ShoppingCard.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\",
+      "BasePath": "_content/ShoppingCard.Web",
+      "RelativePath": "assest/pencil-square.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assest\\pencil-square.svg"
+    },
+    {
       "Identity": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\assest\\ShoppingCard.png",
       "SourceId": "ShoppingCard.Web",
       "SourceType": "Discovered",
@@ -32,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assest\\ShoppingCard.png"
+    },
+    {
+      "Identity": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\assest\\trash.svg",
+      "SourceId": "ShoppingCard.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\",
+      "BasePath": "_content/ShoppingCard.Web",
+      "RelativePath": "assest/trash.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assest\\trash.svg"
     },
     {
       "Identity": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Web\\wwwroot\\css\\Bootswatch.css",

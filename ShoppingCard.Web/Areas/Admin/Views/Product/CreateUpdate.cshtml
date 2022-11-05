@@ -19,17 +19,17 @@
     </div>
     <div class="form-group mt-2">
         <label asp-for="product.Name" class="form-label form-style"></label>
-        <input asp-for="product.Name" class="form-control" />
+        <input asp-for="product.Name" class="form-control" id="name" />
         <span asp-validation-for="product.Name"  class="text-danger"></span>
     </div>
     <div class="form-group mt-2">
         <label asp-for="product.Description" class="form-label form-style"></label>
-        <textarea asp-for="product.Description" class="form-control" cols="3" rows="3" > </textarea>
+        <textarea asp-for="product.Description" class="form-control" cols="3" rows="3" id="des" > </textarea>
         <span asp-validation-for="product.Description"  class="text-danger"></span>
     </div>
     <div class="form-group mt-2">
         <label asp-for="product.Price" class="form-label form-style"></label>
-        <input asp-for="product.Price" class="form-control" />
+        <input asp-for="product.Price" class="form-control" id="price" />
         <span asp-validation-for="product.Price"  class="text-danger"></span>
     </div>
     <div class="form-group mt-2">
@@ -39,7 +39,7 @@
     </div>
     <div class="form-group mt-2">
         <label asp-for="product.CategoryId" class="form-label form-style">Category</label>
-        <select asp-for="product.CategoryId" asp-items="@Model.Categories" class="form-control">
+        <select asp-for="product.CategoryId" asp-items="@Model.Categories" class="form-control" id="category">
             <option disabled selected>--Selected Category--</option>
         </select>
         <span asp-validation-for="product.CategoryId" class="text-danger"></span>
@@ -48,13 +48,13 @@
         @if (Model.product.Id == 0)
 
         {
-            <input type="submit" value="Create" onclick="return ValidEmpty()" class="btn btn-primary" />
+            <input type="submit" value="Create" onclick="return ValidEmpty()" class="btn btn-primary" id="sub" />
         }
 
         else
 
         {
-            <input type="submit" value="Update" class="btn btn-primary" />
+            <input type="submit" value="Update" class="btn btn-primary " id="sub" />
         }
         <a asp-area="Admin" asp-action="Index" asp-controller="Product" class="btn btn-danger">Cancel</a>
     </div>
@@ -76,8 +76,8 @@
 </script>
 }
 <script>
- 
-        function ValidEmpty(){
+     /// Validation For Image
+ function ValidEmpty(){
             debugger;
             var val=document.getElementById("img").value;
             if(val=="" || val==null || val==undefined){
@@ -90,5 +90,30 @@
             }
       return true;
         }
-</script>
+       
+     // alert toastr
+        $(document).ready(function(){
+            debugger;
+            
+                    $("#sub").click(function(){
+                        var $name=$("#name").val(),
+                   $price=$("#price").val(),
+                   $des=$("#des").val(),
+                   $category=$("#category option:selected").val();
+                        debugger;
+                        if(($name==""||$name==undefined||$name==null)&&
+                           
+                            ($price==""||$price==undefined||$price==null||$price=="0")&&
+                            ($des==""||$des==undefined||$des==null)&&
+                            ($category==""||$category==null||$category==undefined||$category=="--Selected Category--"))
+                            {
+                               
+                                toastr.error("Not Complete");
+                            }else{
+                                toastr.success("Done");
+                            }
+                   });
 
+        
+        });
+</script>
