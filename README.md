@@ -9,5 +9,6 @@
 <li><a href="https://www.youtube.com/watch?v=jhxO317TE9w&list=PLzHIrc5EQ2svS6Bup2T9k8D8U3OgjpFrC&index=3">ASP.NET CORE 6.0 : Shopping Cart Project Full Course -3</a>
 <li><a href="https://www.youtube.com/watch?v=EMsVx3mV9tc&list=PLzHIrc5EQ2svS6Bup2T9k8D8U3OgjpFrC&index=4">ASP.NET CORE 6.0 : Shopping Cart Project Full Course -4</a>
 <li><a href="https://www.youtube.com/watch?v=ta0eY1cMSak&list=PLzHIrc5EQ2svS6Bup2T9k8D8U3OgjpFrC&index=5&t=335s">ASP.NET CORE 6.0 : Shopping Cart Project Full Course -5</a>
+<li><a href="https://www.youtube.com/watch?v=LbkKN5kFXWI&list=PLzHIrc5EQ2svS6Bup2T9k8D8U3OgjpFrC&index=6">ASP.NET CORE 6.0 : Shopping Cart Project Full Course -6</a>
 </li>
 </ul>
