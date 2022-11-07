@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -14,6 +15,8 @@ namespace ShoppingCard.Models.Entities {
         public string Description { get; set; }
        [Column(TypeName ="decimal(18,0)")]
         public double Price { get; set; }
+        [NotMapped]
+        public IFormFile? file { get; set; }
         public string?  ImgUrl { get; set; }
         [ForeignKey(nameof(Category))]
         public int? CategoryId { get; set; }

@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ShoppingCard.Models\ShoppingCard.Models.csproj" />
+    <ProjectReference Include="..\ShoppingCard.Utility\ShoppingCard.Utility.csproj" />
   </ItemGroup>
 
 </Project>

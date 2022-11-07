@@ -15,20 +15,21 @@ namespace ShoppingCard.Utility.Services {
             _hosting = hosting;
         }
 
-        public string CreateImg(string? path)
+        public string CreateImg(IFormFile path)
         {
             if (path != null)
             {
                 string FolderMain = Path.Combine(_hosting.WebRootPath, "Images");
-                string FullPath=Path.Combine(FolderMain, path);
-                if (!Directory.Exists(FullPath))
+                if (!Directory.Exists(FolderMain))
                 {
                     Directory.CreateDirectory(FolderMain);
                 }
+                string Name = path.FileName;
+                string FullPath=Path.Combine(FolderMain, Name);
                 FileStream stream=new FileStream(FullPath, FileMode.Create);
-                stream.CopyTo(stream);
+                path.CopyTo(stream);
                 stream.Close();
-                return path;
+                return Name;
             }
             return null;
         }

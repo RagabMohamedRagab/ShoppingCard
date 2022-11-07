@@ -15,3 +15,5 @@ C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\bin\Debug\net6.0\Shoppi
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\bin\Debug\net6.0\ShoppingCard.Models.pdb
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\obj\Debug\net6.0\ShoppingCard.DataAcess.csproj.CopyComplete
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\obj\Debug\net6.0\ShoppingCard.DataAcess.genruntimeconfig.cache
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\bin\Debug\net6.0\ShoppingCard.Utility.dll
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\bin\Debug\net6.0\ShoppingCard.Utility.pdb

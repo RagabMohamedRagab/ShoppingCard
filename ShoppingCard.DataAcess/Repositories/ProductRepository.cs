@@ -1,6 +1,7 @@
 ﻿using ShoppingCard.DataAcess.DbContext;
 using ShoppingCard.DataAcess.IRepositories;
 using ShoppingCard.Models.Entities;
+using ShoppingCard.Utility.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,11 @@ using System.Threading.Tasks;
 namespace ShoppingCard.DataAcess.Repositories {
     public class ProductRepository : Repository<Product>, IProductRepository {
         private readonly ApplicationDbContext _context;
-        public ProductRepository(ApplicationDbContext context) : base(context)
+        private readonly IFileService _fileService;
+        public ProductRepository(ApplicationDbContext context, IFileService fileService) : base(context)
         {
             _context = context;
+            _fileService = fileService;
         }
 
         public void Update(Product product)
@@ -23,9 +26,10 @@ namespace ShoppingCard.DataAcess.Repositories {
                 Pro.Name = product.Name;
                 Pro.Description = product.Description;
                 Pro.Price = product.Price;
-                if (product.ImgUrl != null)
+                if (product.file != null)
                 {
-                    Pro.ImgUrl = product.ImgUrl;
+                    _fileService.DeleImg(Pro.ImgUrl);
+                    Pro.ImgUrl = product.file.FileName;
                 }
                 Pro.CategoryId=product.CategoryId;
                 Pro.UpdateOn=DateTime.Now;

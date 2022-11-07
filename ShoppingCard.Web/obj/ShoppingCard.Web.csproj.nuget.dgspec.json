@@ -34,6 +34,9 @@
             "projectReferences": {
               "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Models\\ShoppingCard.Models.csproj": {
                 "projectPath": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Models\\ShoppingCard.Models.csproj"
+              },
+              "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Utility\\ShoppingCard.Utility.csproj": {
+                "projectPath": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Utility\\ShoppingCard.Utility.csproj"
               }
             }
           }
@@ -139,6 +142,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

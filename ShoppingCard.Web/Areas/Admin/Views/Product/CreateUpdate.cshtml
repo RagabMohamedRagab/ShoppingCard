@@ -10,7 +10,7 @@
     <hr />
 </section>
 
-<form method="post" asp-area="Admin" asp-controller="Product" asp-action="CreateUpdate" asp-route-Id="@Model.product.Id" asp-antiforgery="true">
+<form method="post" asp-area="Admin" asp-controller="Product" asp-action="CreateUpdate" asp-route-Id="@Model.product.Id" asp-antiforgery="true" enctype="multipart/form-data">
     <div asp-validation-summary="ModelOnly"></div>
     <div class="form-group mt-2"style="display:none">
         <label asp-for="product.Id" class="form-lable form-style"></label>
@@ -33,8 +33,14 @@
         <span asp-validation-for="product.Price"  class="text-danger"></span>
     </div>
     <div class="form-group mt-2">
-        <label asp-for="product.ImgUrl" class="form-label form-style"></label>
-        <input asp-for="product.ImgUrl" type="file" class="form-control" id="img" />
+        @if(Model.product.Id == 0){
+              <img src="~/Images/Image-Not-Found .png"class="img-thumbnail" style="width:20%;height:20%"  alt="Card-Img"/>
+        }else{
+              <img src="~/Images/@Model.product.ImgUrl"class="img-thumbnail" style="width:20%;height:20%  alt="Card-Img"/>
+        }
+        <br/>
+        <label asp-for="product.file" class="form-label form-style"></label>
+        <input asp-for="product.file" type="file" class="form-control" id="img" />
         <span asp-validation-for="product.ImgUrl" class="text-danger"></span>
     </div>
     <div class="form-group mt-2">

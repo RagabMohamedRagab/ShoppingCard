@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using ShoppingCard.DataAcess.IRepositories;
 using ShoppingCard.DataAcess.ViewModels;
@@ -51,8 +52,8 @@ namespace ShoppingCard.Web.Areas.Admin.Controllers {
         {
             if (Id == 0 || Id == null) 
             {
-                    string img = _fileService.CreateImg(model.product.ImgUrl);
-                    model.product.ImgUrl = img;
+                  string img = _fileService.CreateImg(model.product.file);
+                model.product.ImgUrl = img;
                     _unit.Producds.Add(model.product);
                     if (_unit.Save() > 0)
                     {
@@ -63,9 +64,9 @@ namespace ShoppingCard.Web.Areas.Admin.Controllers {
             }
             else
             {
-                
-    
-                    _unit.Producds.Update(model.product);
+                string img = _fileService.CreateImg(model.product.file);
+                model.product.ImgUrl = img;
+                _unit.Producds.Update(model.product);
                     if (_unit.Save()>0)
                     {
           
