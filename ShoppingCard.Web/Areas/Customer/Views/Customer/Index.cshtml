@@ -15,7 +15,7 @@
                     <p class="Card-text">@Model[i].Price.ToString("0.00")</p>
                 </div>
                 <div class="card-footer">
-                    <a class="btn btn-primary" asp-area="Customer" asp-action="Details" asp-controller="Customer" asp-route-id="@Model[i].Id"><img src="~/assest/journal-text.svg" alt=""/></a>
+                    <a class="btn btn-primary" asp-area="Customer" asp-action="Details" asp-controller="Customer" asp-route-ProductId="@Model[i].Id"><img src="~/assest/journal-text.svg" alt=""/></a>
                 </div>
             </div>
         }

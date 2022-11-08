@@ -23,7 +23,7 @@ namespace ShoppingCard.Web.Areas.Admin.Controllers {
         [HttpGet]
         public IActionResult Index()
         {
-            return Ok();
+            return View();
         }
         [HttpGet]
         public IActionResult CreateUpdate(int ? Id)
@@ -93,5 +93,6 @@ namespace ShoppingCard.Web.Areas.Admin.Controllers {
                 return RedirectToAction(nameof(Index));
             }
         }
+        
     }
 }
