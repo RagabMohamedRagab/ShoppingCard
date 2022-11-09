@@ -279,3 +279,4 @@ C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\runtimes\win
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\ShoppingCard.Utility.dll
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\ShoppingCard.Utility.pdb
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\libman.json
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
