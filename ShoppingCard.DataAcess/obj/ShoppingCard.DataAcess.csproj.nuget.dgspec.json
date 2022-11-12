@@ -198,7 +198,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Models\\ShoppingCard.Models.csproj": {
+                "projectPath": "C:\\Users\\pc\\Desktop\\Shopping Card\\ShoppingCard.Models\\ShoppingCard.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -214,6 +218,14 @@
             "Microsoft.AspNetCore.Hosting.Abstractions": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

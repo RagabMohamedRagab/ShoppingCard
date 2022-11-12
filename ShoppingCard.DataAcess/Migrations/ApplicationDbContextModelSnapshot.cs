@@ -17,7 +17,7 @@ namespace ShoppingCard.DataAcess.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.2")
+                .HasAnnotation("ProductVersion", "6.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
@@ -248,17 +248,13 @@ namespace ShoppingCard.DataAcess.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("applicationUserId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ProductId");
 
-                    b.HasIndex("applicationUserId");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Carts");
                 });
@@ -412,7 +408,7 @@ namespace ShoppingCard.DataAcess.Migrations
 
                     b.HasOne("ShoppingCard.Models.Entities.ApplicationUser", "applicationUser")
                         .WithMany()
-                        .HasForeignKey("applicationUserId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

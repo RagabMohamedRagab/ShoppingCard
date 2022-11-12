@@ -6,22 +6,25 @@ using ShoppingCard.DataAcess.Repositories;
 using ShoppingCard.Utility.Services;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Identity;
+using ShoppingCard.Models.Entities;
+using ShoppingCard.Utility.Utility;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-
-builder.Services.AddDefaultIdentity<IdentityUser>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddDbContext<ApplicationDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("Connection")));
+builder.Services.AddIdentity<ApplicationUser,IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>().AddDefaultTokenProviders();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IFileService,FileService>();
+builder.Services.AddScoped<IDbInitlizar, DbInitlizar>();
 builder.Services.AddControllers().AddJsonOptions(x =>
                 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+builder.Services.AddRazorPages();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -36,25 +39,25 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+dataseeding();
 app.UseAuthentication();;
-
 app.UseAuthorization();
 
-
+app.MapRazorPages();
 app.MapControllerRoute(
     name: "Area",
-      pattern: "{area:exists}/{controller=Category}/{action=Index}/{id?}"
-    );
-app.MapControllerRoute(
-    name: "Area",
-      pattern: "{area:exists}/{controller=Product}/{action=Index}/{id?}"
-    );
-app.MapControllerRoute(
-    name: "Area",
-      pattern: "{area:exists}/{controller=Customer}/{action=Index}/{id?}"
+      pattern: "{area:exists}/{controller}/{action}/{id?}"
     );
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
 app.Run();
+// Seeding Data 
+void dataseeding()
+{
+    using (var scope=app.Services.CreateScope())
+    {
+        var db = scope.ServiceProvider.GetRequiredService<IDbInitlizar>();
+        db.Initlizar();
+    }
+}

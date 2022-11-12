@@ -9,4 +9,7 @@ C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\obj\Debug\net6.0\Shopping
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\obj\Debug\net6.0\ShoppingCard.Utility.dll
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\obj\Debug\net6.0\ref\ShoppingCard.Utility.dll
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\obj\Debug\net6.0\ShoppingCard.Utility.pdb
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\bin\Debug\net6.0\ShoppingCard.Models.dll
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\bin\Debug\net6.0\ShoppingCard.Models.pdb
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\obj\Debug\net6.0\ShoppingCard.Utility.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\obj\Debug\net6.0\ShoppingCard.Utility.csproj.CopyComplete
