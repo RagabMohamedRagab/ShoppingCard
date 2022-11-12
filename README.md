@@ -13,4 +13,6 @@
 </li>
 <li><a href="https://www.youtube.com/watch?v=mvloim3cT2g&list=PLzHIrc5EQ2svS6Bup2T9k8D8U3OgjpFrC&index=7">ASP.NET CORE 6.0 : Shopping Cart Project Full Course -7</a>
 </li>
+<li><a href="https://www.youtube.com/watch?v=JGA2sc1_6LU&list=PLzHIrc5EQ2svS6Bup2T9k8D8U3OgjpFrC&index=8&t=254s">ASP.NET CORE 6.0 : Shopping Cart Project Full Course -8</a>
+</li>
 </ul>
