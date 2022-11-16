@@ -37,7 +37,6 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
 dataseeding();
 app.UseAuthentication();;
@@ -46,11 +45,12 @@ app.UseAuthorization();
 app.MapRazorPages();
 app.MapControllerRoute(
     name: "Area",
-      pattern: "{area:exists}/{controller}/{action}/{id?}"
+      pattern: "{area:exists}/{Controller=Customer}/{Action=Index}/{id?}"
     );
-app.MapControllerRoute(
+app.MapAreaControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    areaName:"Customer",
+    pattern: "{Controller=Customer}/{Action=Index}/{id?}");
 app.Run();
 // Seeding Data 
 void dataseeding()

@@ -9,4 +9,3 @@ C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\obj\Debug\net6.0\ShoppingC
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\obj\Debug\net6.0\ShoppingCard.Models.dll
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\obj\Debug\net6.0\ref\ShoppingCard.Models.dll
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\obj\Debug\net6.0\ShoppingCard.Models.pdb
-C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Models\obj\Debug\net6.0\ShoppingCard.Models.csproj.AssemblyReference.cache

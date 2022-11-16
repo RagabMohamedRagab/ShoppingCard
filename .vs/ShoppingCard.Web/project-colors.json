@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "4a9e534f-4129-4839-b969-ec88b5fa83ab": {
+      "ProjectGuid": "4a9e534f-4129-4839-b969-ec88b5fa83ab",
+      "DisplayName": "ShoppingCard.Web",
+      "ColorIndex": 0
+    },
+    "57a409f8-4592-4b43-88a6-ec2a14197c77": {
+      "ProjectGuid": "57a409f8-4592-4b43-88a6-ec2a14197c77",
+      "DisplayName": "ShoppingCard.DataAcess",
+      "ColorIndex": 1
+    },
+    "0521ab81-327b-4b27-a35c-62e6fd301b36": {
+      "ProjectGuid": "0521ab81-327b-4b27-a35c-62e6fd301b36",
+      "DisplayName": "ShoppingCard.Utility",
+      "ColorIndex": 2
+    },
+    "ddbdeb34-f035-49ce-83a3-b229fb05d95c": {
+      "ProjectGuid": "ddbdeb34-f035-49ce-83a3-b229fb05d95c",
+      "DisplayName": "ShoppingCard.Models",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
