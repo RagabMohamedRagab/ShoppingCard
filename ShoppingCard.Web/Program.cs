@@ -38,7 +38,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-dataseeding();
+//dataseeding();
 app.UseAuthentication();;
 app.UseAuthorization();
 
@@ -49,15 +49,19 @@ app.MapControllerRoute(
     );
 app.MapAreaControllerRoute(
     name: "default",
-    areaName:"Customer",
+    areaName: "Customer",
     pattern: "{Controller=Customer}/{Action=Index}/{id?}");
+app.MapControllerRoute(
+    name: "Last",
+      pattern: "{Controller=Home}/{Action=Index}/{id?}"
+    );
 app.Run();
 // Seeding Data 
-void dataseeding()
-{
-    using (var scope=app.Services.CreateScope())
-    {
-        var db = scope.ServiceProvider.GetRequiredService<IDbInitlizar>();
-        db.Initlizar();
-    }
-}
+//void dataseeding()
+//{
+//    using (var scope=app.Services.CreateScope())
+//    {
+//        var db = scope.ServiceProvider.GetRequiredService<IDbInitlizar>();
+//        db.Initlizar();
+//    }
+//}
