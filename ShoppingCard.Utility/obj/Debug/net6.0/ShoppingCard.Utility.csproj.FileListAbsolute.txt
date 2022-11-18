@@ -1,6 +1,5 @@
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\bin\Debug\net6.0\ShoppingCard.Utility.deps.json
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\bin\Debug\net6.0\ShoppingCard.Utility.dll
-C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\bin\Debug\net6.0\ref\ShoppingCard.Utility.dll
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\bin\Debug\net6.0\ShoppingCard.Utility.pdb
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\obj\Debug\net6.0\ShoppingCard.Utility.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\obj\Debug\net6.0\ShoppingCard.Utility.AssemblyInfoInputs.cache
@@ -13,3 +12,4 @@ C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\bin\Debug\net6.0\Shopping
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\bin\Debug\net6.0\ShoppingCard.Models.pdb
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\obj\Debug\net6.0\ShoppingCard.Utility.csproj.AssemblyReference.cache
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\obj\Debug\net6.0\ShoppingCard.Utility.csproj.CopyComplete
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Utility\obj\Debug\net6.0\refint\ShoppingCard.Utility.dll

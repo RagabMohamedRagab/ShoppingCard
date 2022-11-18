@@ -8,9 +8,7 @@ using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Identity;
 using ShoppingCard.Models.Entities;
 using ShoppingCard.Utility.Utility;
-
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("Connection")));
@@ -38,7 +36,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-//dataseeding();
+dataseeding();
 app.UseAuthentication();;
 app.UseAuthorization();
 
@@ -57,11 +55,11 @@ app.MapControllerRoute(
     );
 app.Run();
 // Seeding Data 
-//void dataseeding()
-//{
-//    using (var scope=app.Services.CreateScope())
-//    {
-//        var db = scope.ServiceProvider.GetRequiredService<IDbInitlizar>();
-//        db.Initlizar();
-//    }
-//}
+void dataseeding()
+{
+    using (var scope = app.Services.CreateScope())
+    {
+        var db = scope.ServiceProvider.GetRequiredService<IDbInitlizar>();
+        db.Initlizar();
+    }
+}

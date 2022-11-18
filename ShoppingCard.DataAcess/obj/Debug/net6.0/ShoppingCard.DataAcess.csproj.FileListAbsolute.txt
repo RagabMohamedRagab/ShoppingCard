@@ -1,6 +1,5 @@
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\bin\Debug\net6.0\ShoppingCard.DataAcess.deps.json
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\bin\Debug\net6.0\ShoppingCard.DataAcess.dll
-C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\bin\Debug\net6.0\ref\ShoppingCard.DataAcess.dll
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\bin\Debug\net6.0\ShoppingCard.DataAcess.pdb
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\obj\Debug\net6.0\ShoppingCard.DataAcess.csproj.AssemblyReference.cache
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\obj\Debug\net6.0\ShoppingCard.DataAcess.GeneratedMSBuildEditorConfig.editorconfig
@@ -17,3 +16,4 @@ C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\obj\Debug\net6.0\Shoppi
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\obj\Debug\net6.0\ShoppingCard.DataAcess.genruntimeconfig.cache
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\bin\Debug\net6.0\ShoppingCard.Utility.dll
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\bin\Debug\net6.0\ShoppingCard.Utility.pdb
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.DataAcess\obj\Debug\net6.0\refint\ShoppingCard.DataAcess.dll

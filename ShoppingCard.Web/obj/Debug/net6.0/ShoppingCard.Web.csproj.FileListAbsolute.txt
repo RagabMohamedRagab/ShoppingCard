@@ -6,7 +6,6 @@ C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\ShoppingCard
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\ShoppingCard.Web.deps.json
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\ShoppingCard.Web.runtimeconfig.json
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\ShoppingCard.Web.dll
-C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\ref\ShoppingCard.Web.dll
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\Humanizer.dll
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\MessagePack.dll
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\MessagePack.Annotations.dll
@@ -262,6 +261,7 @@ C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\ShoppingCard
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\ShoppingCard.DataAcess.pdb
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\ShoppingCard.Utility.pdb
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\bin\Debug\net6.0\ShoppingCard.Models.pdb
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\ShoppingCard.Web.csproj.AssemblyReference.cache
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\ShoppingCard.Web.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\ShoppingCard.Web.AssemblyInfoInputs.cache
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\ShoppingCard.Web.AssemblyInfo.cs
@@ -277,4 +277,9 @@ C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\ShoppingCard
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\ShoppingCard.Web.dll
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\ref\ShoppingCard.Web.dll
 C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\ShoppingCard.Web.genruntimeconfig.cache
-C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\ShoppingCard.Web.csproj.AssemblyReference.cache
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\staticwebassets\msbuild.ShoppingCard.Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\staticwebassets\msbuild.build.ShoppingCard.Web.props
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ShoppingCard.Web.props
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ShoppingCard.Web.props
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\pc\Desktop\Shopping Card\ShoppingCard.Web\obj\Debug\net6.0\refint\ShoppingCard.Web.dll
